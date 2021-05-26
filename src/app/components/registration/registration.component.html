@@ -37,3 +37,30 @@
         </div>
     </div>
 </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="w-100">
+
+                <p-calendar formControlName="date" [style]="{'width': '100%'}" value="Choose Date"></p-calendar>
+
+
+            </div>
+
+            <div class="p-field p-col-12 pt-4">
+                <span class="p-float-label">
+                    <input type="text" id="inputtext" pInputText  [ngClass]="{itemWidth:'true'}" > 
+                    <label for="inputtext">InputText</label>
+                </span>
+            </div>
+
+            <div class="pt-4">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                    <input type="text" pInputText placeholder="Username" [ngClass]="{itemWidth:'true'}">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

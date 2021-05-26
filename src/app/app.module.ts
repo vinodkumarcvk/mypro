@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PrimeTableComponent } from './components/prime-table/prime-table.component';
@@ -17,7 +16,9 @@ import { MatInputModule } from '@angular/material/input';
 
 import { TableModule } from 'primeng/table';
 import {DropdownModule} from 'primeng/dropdown';
-
+import { ButtonModule } from 'primeng/button';
+import {InputSwitchModule} from 'primeng/inputswitch';
+import {CalendarModule} from 'primeng/calendar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,15 +29,20 @@ import {DropdownModule} from 'primeng/dropdown';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule,
-    TableModule,
     BrowserAnimationsModule,
+    
     MatButtonModule,
     MatIconModule,
     MatTableModule,
     MatInputModule,
     MatFormFieldModule,
-    DropdownModule
+    
+    
+    TableModule,
+    DropdownModule,
+    ButtonModule,
+    CalendarModule,
+    InputSwitchModule
 
   ],
   providers: [],
