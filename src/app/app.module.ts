@@ -6,6 +6,7 @@ import { PrimeTableComponent } from './components/prime-table/prime-table.compon
 import { MaterialTableComponent } from './components/material-table/material-table.component';
 import { RegistrationComponent } from './components/registration/registration.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {HttpClientModule} from '@angular/common/http';
 
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
@@ -19,6 +20,16 @@ import {DropdownModule} from 'primeng/dropdown';
 import { ButtonModule } from 'primeng/button';
 import {InputSwitchModule} from 'primeng/inputswitch';
 import {CalendarModule} from 'primeng/calendar';
+import {KnobModule} from 'primeng/knob';
+import {SliderModule} from 'primeng/slider';
+import {RatingModule} from 'primeng/rating';
+import {SplitterModule} from 'primeng/splitter';
+import {DialogModule} from 'primeng/dialog';
+import {FileUploadModule} from 'primeng/fileupload';
+import {BadgeModule} from 'primeng/badge';
+import {ProgressBarModule} from 'primeng/progressbar';
+import {ProgressSpinnerModule} from 'primeng/progressspinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,19 +41,30 @@ import {CalendarModule} from 'primeng/calendar';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     
     MatButtonModule,
     MatIconModule,
     MatTableModule,
     MatInputModule,
     MatFormFieldModule,
+ 
     
     
     TableModule,
     DropdownModule,
     ButtonModule,
     CalendarModule,
-    InputSwitchModule
+    InputSwitchModule,
+    KnobModule,
+    SliderModule,
+    RatingModule,
+    SplitterModule,
+    DialogModule,
+    FileUploadModule,
+    BadgeModule,
+    ProgressBarModule,
+    ProgressSpinnerModule,
 
   ],
   providers: [],

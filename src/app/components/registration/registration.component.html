@@ -48,19 +48,82 @@
 
             </div>
 
-            <div class="p-field p-col-12 pt-4">
+            <div class="p-field p-col-12 divpadd">
                 <span class="p-float-label">
                     <input type="text" id="inputtext" pInputText  [ngClass]="{itemWidth:'true'}" > 
                     <label for="inputtext">InputText</label>
                 </span>
             </div>
 
-            <div class="pt-4">
+            <div class="divpadd'">
                 <div class="p-inputgroup">
                     <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
                     <input type="text" pInputText placeholder="Username" [ngClass]="{itemWidth:'true'}">
                 </div>
             </div>
+
+            <div class="divpadd">
+                <label for="check" class="pl-4">Acceept The Condition</label>
+                <p-inputSwitch (onChange)="handleChange($event)"></p-inputSwitch>
+            </div>
+
+            <div class="divpadd">
+                <p-knob [min]="0" [max]="100"></p-knob>
+
+            </div>
+
+            <div class="divpadd">
+                <p-rating></p-rating>
+                <p-rating formControlName="score"></p-rating>
+            </div>
+
+            <div class="divpadd">
+                <!-- <p-slider></p-slider> -->
+                <p-slider formControlName="age"></p-slider>
+                <!-- <p-slider [min]="0" [max]="100"></p-slider>
+                <p-slider [step]="10"></p-slider> -->
+            </div>
+
+            <div class="divpadd">
+                <p-splitter [style]="{'height': '300px'}" layout="vertical">
+                    <ng-template pTemplate>
+                        Panel 1
+                    </ng-template>
+                    <ng-template pTemplate>
+                        Panel 2
+                    </ng-template>
+                </p-splitter>
+            </div>
+
+            <div class="divpadd">
+                <p-dialog header="Blood Moon to be visible in India" [(visible)]="display">
+                    The Total Lunar Eclipse occurring on May 26 (Wednesday) will be visible in several countries. The first lunar eclipse of 2021 will be an especially super lunar event, as it will be a supermoon, a lunar eclipse and a red blood moon all at once. A full
+                    lunar eclipse occurs when the sun, earth and moon are in a straight line. At the time of the eclipse, the earth comes between the sun and the moon. Due to this, the sunlight does not reach the moon and the moon appears dark. The effect
+                    of the sunlight on the earth's atmosphere makes the moon appear in a different colour. The total lunar eclipses are sometimes called Blood Moons because of the reddish shades the Full Moon takes on when fully eclipsed. However, India
+                    will witness a partial lunar eclipse just after moonrise in the north-eastern states, some parts of West Bengal, some coastal parts of Odisha and Andaman & Nicobar Islands.
+                </p-dialog>
+                <button type="button" (click)="showDialog()" icon="pi pi-info-circle" label="Show"> Show News</button>
+            </div>
+
+            <div class="divpadd">
+                <p-fileUpload name="myfile[]" [ngClass]="{itemWidth:'true'}"></p-fileUpload>
+            </div>
+
+            <div class="divpadd">
+
+                <!-- <p-badge severity="success" severity="success" value="2"></p-badge> -->
+
+                <i class="pi pi-bell" pBadge value="2" severity="success"></i>
+            </div>
+            <div class="divpadd">
+                <p-progressBar [value]="value"></p-progressBar>
+            </div>
+
+            <div class="divpadd">
+                <p-progressSpinner></p-progressSpinner>
+            </div>
+
+
         </div>
     </div>
 </div>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 interface City {
   cityName: string,
   
@@ -11,10 +12,11 @@ interface City {
 })
 export class RegistrationComponent implements OnInit {
   cities: City[];
-
+  options: any;
   selectedCity!: string;
-  constructor() {
+  value:number=10;
 
+  constructor() {
     this.cities = [
       {cityName: 'Hyderabad '},
       {cityName: 'Chennai' },
@@ -22,9 +24,28 @@ export class RegistrationComponent implements OnInit {
       {cityName: 'Delhi'},
       {cityName: 'Mumbai'}
   ];
+
    }
 
+
+
   ngOnInit(): void {
+    this.options = {
+      center: {lat: 36.890257, lng: 30.707417},
+      zoom: 12
+  };
   }
+
+
+  handleChange(e:any){
+   var  ischecked = e.checked
+  }
+
+  display: boolean = false;
+
+  showDialog() {
+      this.display = true;
+  }
+
 
 }
