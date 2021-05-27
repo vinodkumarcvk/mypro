@@ -1,0 +1,29 @@
+.p-col-6 {
+    background-color: beige;
+}
+
+.place1 {
+    background-color: rgb(150, 231, 143);
+    height: 40px;
+}
+
+.place2 {
+    background-color: rgb(230, 171, 94);
+    height: 40px;
+}
+
+.place3 {
+    background-color: rgb(231, 162, 208);
+    height: 40px;
+}
+
+.place4 {
+    background-color: rgb(132, 209, 233);
+    height: 40px;
+}
+
+.p-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px !important;
+}
